@@ -2,3 +2,4 @@ node_modules/
 public/
 *.svg
 *.md
+.DS_Store
