@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react'
 
 class ComponentInput extends Component {
 
   static propTypes = {
-    onSubmit: propTypes.func
+    onSubmit: PropTypes.func
   }
 
   constructor() {
@@ -53,7 +53,6 @@ class ComponentInput extends Component {
 
   handleSubmit() {
     if (this.props.onSubmit) {
-      const {username, content} = this.state
       this.props.onSubmit({
         username: this.state.username,
         content: this.state.content,
